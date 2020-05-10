@@ -43,4 +43,8 @@ window.addEventListener('load', () => {
         
     })
 })
-//asdasd
+function sortList () {
+    list.sort( (item1, item2) => {
+        return item2.id - item1.id;
+    });
+}
