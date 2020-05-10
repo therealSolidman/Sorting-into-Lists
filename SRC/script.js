@@ -37,14 +37,9 @@ window.addEventListener('load', () => {
             let id = item.id;
             let name = item.name;
             masterList.push( item );
-            let listItem = `<li data-id="${id}">${name}</li>`;
+            let listItem = `<li data-id="${id}">${name}<button id="${id}" class="perishablebutton" type="button">Perishable</botton><button class="non-perishablebutton" type="button">Non-Perishable</botton></li>`;
             masterDisplay.insertAdjacentHTML('beforeend', listItem);
         }) 
         
     })
 })
-function sortList () {
-    list.sort( (item1, item2) => {
-        return item2.id - item1.id;
-    });
-}
